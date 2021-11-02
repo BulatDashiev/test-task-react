@@ -9,6 +9,12 @@ export default function SearchInput(props) {
     <div className={styles.search}>
       <Magnifier />
       <input
+        onKeyDown={(event) => {
+          if (event.code === "Enter") {
+            onSubmit && onSubmit(text);
+            setText("");
+          }
+        }}
         placeholder={placeholder}
         value={text}
         onChange={(event) => setText(event.target.value)}
