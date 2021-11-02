@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 270px 1fr;
+}
+
+.aside {
+  padding: 20px 0;
+}
+
+.properties {
+  margin-top: 28px;
+}
+
+.select + .select {
+  margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+@import "../Property/Property.module.scss";
+
+.image {
+  background-color: #f2f2f2;
+}
+
+.body {
+  p {
+    display: inline-block;
+    width: 80%;
+    height: 24px;
+    background-color: #f2f2f2;
+  }
+
+  span {
+    display: inline-block;
+    margin-top: 10px;
+    width: 50%;
+    height: 21px;
+    background-color: #f2f2f2;
+  }
+}
