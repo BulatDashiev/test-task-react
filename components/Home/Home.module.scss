@@ -1,11 +1,17 @@
 .grid {
+  margin-top: 50px;
+  margin-bottom: 20vh;
   display: grid;
   gap: 40px;
   grid-template-columns: 270px 1fr;
 }
 
 .aside {
-  padding: 20px 0;
+  & > div {
+    padding: 20px 0;
+    position: sticky;
+    top: 50px;
+  }
 }
 
 .properties {

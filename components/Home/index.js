@@ -21,20 +21,22 @@ export default function Home() {
   return (
     <div className={styles.grid}>
       <div className={styles.aside}>
-        <Select
-          className={styles.select}
-          prefix="Sort by"
-          items={sortItems}
-          value={sort}
-          onSelect={(item) => setSort(item.value)}
-        />
-        <Select
-          className={styles.select}
-          prefix="Type"
-          items={typeItems}
-          value={type}
-          onSelect={(item) => setType(item.value)}
-        />
+        <div>
+          <Select
+            className={styles.select}
+            prefix="Sort by"
+            items={sortItems}
+            value={sort}
+            onSelect={(item) => setSort(item.value)}
+          />
+          <Select
+            className={styles.select}
+            prefix="Type"
+            items={typeItems}
+            value={type}
+            onSelect={(item) => setType(item.value)}
+          />
+        </div>
       </div>
       <div>
         <SearchInput
